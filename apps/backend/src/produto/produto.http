@@ -1,13 +1,13 @@
-GET http://localhost:3333/produtos
+GET http://localhost:3005/produtos
 
 ###
-GET http://localhost:3333/produtos/30
+GET http://localhost:3005/produtos/30
 
 ###
-DELETE http://localhost:3333/produtos/29
+DELETE http://localhost:3005/produtos/29
 
 ###
-POST http://localhost:3333/produtos
+POST http://localhost:3005/produtos
 Content-Type: application/json
 
 {

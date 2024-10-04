@@ -17,7 +17,11 @@ export default function NotaReview(props: NotaReviewProps) {
                 estrelas.push(<IconStar size={props.tamanho ?? 12} />)
             }
         }
-        return estrelas
+        return estrelas.map((estrela, index) => (
+            <span key={index}>
+                {estrela}
+            </span>
+        ))
     }
 
     return <div className="flex gap-0.5 text-emerald-400">{notaParaEstrelas(props.nota)}</div>
